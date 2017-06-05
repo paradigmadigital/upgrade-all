@@ -9,7 +9,7 @@ There's none.
 ## Example Playbook
 
 ```yaml
-- hosts        : localhost
+- hosts: localhost
   roles:
     - role: upgrade-all
 ```
