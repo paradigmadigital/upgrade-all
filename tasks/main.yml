@@ -2,7 +2,7 @@
 # tasks for upgrade-all
 - name: Wait until apt is not blocked
   become: yes
-  shell: if [[ -e $(cat /var/lib/dpkg/lock) ]]; then while [[ -n $(cat /var/lib/dpkg/lock) ]]; do sleep 1; done; fi
+  shell: if [[ -e $(cat /var/lib/dpkg/lock) ]]; then while [[ -n $(cat /var/lib/dpkg/lock) ]]; do sleep 5; done; fi
 
 - name: Upgrade packages
   apt:
